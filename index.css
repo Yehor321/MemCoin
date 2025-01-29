@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Jersey 10", serif;
+    color: white;
+}
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 5% 10% 0 10%;
+}
+body{
+    width: 40%;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%; 
+}
+.header__logo{
+    font-size: 25px;
+}
+.header__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    font-size: 20px;
+}
+.header__language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ED0B0F;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.header__language img {
+    width: 20px;
+    height: 20px;
+    text-align: ;
+}
+.header__telegram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ED0B0F;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+}
+.header__telegram img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.main__number_wallet{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+main h1{
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.main__aboutterebonk{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.main__aboutterebonk p{
+    font-size: 25px;
+}
+.main__aboutterebonk img{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+.main__aboutterebonk_texts{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.main__aboutterebonk_texts p:last-child{
+    margin-top: 10%;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.main__buy{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.carousel {
+    overflow: hidden;
+    padding: 10px;
+    white-space: nowrap;
+    position: relative;
+}
+.carousel-track {
+    display: flex;
+    gap: 10px;
+    animation: scroll 10s linear infinite;
+    width: max-content;
+}
+.btn {
+    background-color: #000000;
+    border: 3px solid #ED0B0F ;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+.btn:focus {
+    outline: 2px solid blue;
+}
+.main__referral{
+    text-align: center;
+    background-color: #ED0B0F;
+    font-size: 25px;
+    padding: 3%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+main h2{
+    text-align: center;
+    font-size: 48px;
+}
+.main__text_green{
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    margin-bottom: 5%;
+}
+.main__wallet{
+    background-color: #ED0B0F;
+    border-radius: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+.main__wallet p:first-child{
+    background-color: black;
+    border-radius: 25px;
+    width: 80%;
+    text-align: center;
+    padding: 1%;
+}
+.main__wallet p:last-child{
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.main__coinprice{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.main__terebonk{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 150px;
+}
+.main__terebonktext{
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    margin-bottom: 5%;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.footer__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    background-color: #000000;
+    border: 3px solid #ED0B0F ;
+    border-radius: 30px;
+    width: 40%;
+    margin: 1%;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+    }
+}
+
